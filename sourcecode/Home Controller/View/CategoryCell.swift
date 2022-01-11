@@ -18,7 +18,7 @@ class CategoryCell: UICollectionViewCell {
         //        backView.layer.shadowOpacity = 1.0
         //        backView.layer.shadowRadius = 6.0
         //        backView.layer.borderWidth = 1.0
-        
+         
 //        backView.shadowBorder()
         //        backView.layer.shadowColor = UIColor.black.cgColor
         //        backView.layer.shadowOffset = CGSize(width: 0, height: 0)
