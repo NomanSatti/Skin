@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AddressTextTableViewCell" rowHeight="216" id="KGk-i7-Jjw" customClass="AddressTextTableViewCell" customModule="MobikulBToB" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="461" height="216"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="461" height="215.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lg7-sV-7To">
+                        <rect key="frame" x="0.0" y="0.0" width="461" height="215.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTh-ss-xnT">
+                                <rect key="frame" x="16" y="16" width="429" height="126.5"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GrF-Yz-5Tp">
+                                <rect key="frame" x="0.0" y="158.5" width="461" height="0.5"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="ZaG-KG-llN"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="VRl-b0-qZK">
+                                <rect key="frame" x="0.0" y="159" width="461" height="56"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0iq-i1-TPg">
+                                        <rect key="frame" x="0.0" y="0.0" width="230.5" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                        <state key="normal" title="Edit" image="edit">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WID-Gs-HXu">
+                                        <rect key="frame" x="230.5" y="0.0" width="230.5" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="wC6-HV-9FB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="30" maxY="0.0"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="40" maxY="0.0"/>
+                                        <state key="normal" title="Remove" image="Icon-Trash">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="removeAddressAct:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="VS9-Lh-TyT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S2V-1Z-Xqk">
+                                <rect key="frame" x="0.0" y="215" width="461" height="0.5"/>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="nbk-Ad-LU6"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="S2V-1Z-Xqk" secondAttribute="bottom" id="5t8-6h-Lj1"/>
+                            <constraint firstItem="VRl-b0-qZK" firstAttribute="top" secondItem="GrF-Yz-5Tp" secondAttribute="bottom" id="9cm-be-1BK"/>
+                            <constraint firstItem="VRl-b0-qZK" firstAttribute="leading" secondItem="lg7-sV-7To" secondAttribute="leading" id="AMP-t7-gFd"/>
+                            <constraint firstItem="DTh-ss-xnT" firstAttribute="top" secondItem="lg7-sV-7To" secondAttribute="top" constant="16" id="Cco-x4-G5D"/>
+                            <constraint firstAttribute="trailing" secondItem="S2V-1Z-Xqk" secondAttribute="trailing" id="HhC-B7-IBH"/>
+                            <constraint firstAttribute="trailing" secondItem="VRl-b0-qZK" secondAttribute="trailing" id="MUh-Wv-5pK"/>
+                            <constraint firstItem="S2V-1Z-Xqk" firstAttribute="leading" secondItem="lg7-sV-7To" secondAttribute="leading" id="dUy-iu-Jos"/>
+                            <constraint firstItem="DTh-ss-xnT" firstAttribute="leading" secondItem="lg7-sV-7To" secondAttribute="leading" constant="16" id="m4E-yb-yGb"/>
+                            <constraint firstAttribute="trailing" secondItem="GrF-Yz-5Tp" secondAttribute="trailing" id="pVh-2I-ohX"/>
+                            <constraint firstItem="GrF-Yz-5Tp" firstAttribute="top" secondItem="DTh-ss-xnT" secondAttribute="bottom" constant="16" id="qc4-3n-EXN"/>
+                            <constraint firstItem="GrF-Yz-5Tp" firstAttribute="leading" secondItem="lg7-sV-7To" secondAttribute="leading" id="uIT-HB-dML"/>
+                            <constraint firstAttribute="trailing" secondItem="DTh-ss-xnT" secondAttribute="trailing" constant="16" id="wYG-kO-ddT"/>
+                            <constraint firstItem="S2V-1Z-Xqk" firstAttribute="top" secondItem="VRl-b0-qZK" secondAttribute="bottom" id="yUf-7m-GT5"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="lg7-sV-7To" secondAttribute="trailing" id="Ff3-aL-8cL"/>
+                    <constraint firstItem="lg7-sV-7To" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="NLQ-As-0L3"/>
+                    <constraint firstItem="lg7-sV-7To" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="YWA-z0-DR3"/>
+                    <constraint firstAttribute="bottom" secondItem="lg7-sV-7To" secondAttribute="bottom" id="cMM-dT-OYp"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressDataLbl" destination="DTh-ss-xnT" id="Ype-pd-EPw"/>
+                <outlet property="editBtn" destination="0iq-i1-TPg" id="iU7-70-I56"/>
+                <outlet property="lowerLineView" destination="S2V-1Z-Xqk" id="YEe-8Q-zvS"/>
+                <outlet property="removeBtnAct" destination="WID-Gs-HXu" id="Yug-PX-Afj"/>
+                <outlet property="upperLineView" destination="GrF-Yz-5Tp" id="X1k-mr-QW3"/>
+            </connections>
+            <point key="canvasLocation" x="250.40000000000001" y="235.68215892053973"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon-Trash" width="24" height="24"/>
+        <image name="edit" width="24" height="24"/>
+    </resources>
+</document>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ConfigurableTextCollectionViewCell" customModule="Mobikul_Single_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="180" height="133"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="180" height="133"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vo3-lH-3IN">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="133"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gxW-GG-b98" customClass="DiagonalLine" customModule="Mobikul_Single_App" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="180" height="133"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="flip" value="NO"/>
+                            <userDefinedRuntimeAttribute type="number" keyPath="lineWidth">
+                                <real key="value" value="2"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="color">
+                                <color key="value" name="PriceOrangeColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="vo3-lH-3IN" secondAttribute="bottom" id="BJa-Hy-8sl"/>
+                <constraint firstItem="gxW-GG-b98" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Ecv-W7-w3G"/>
+                <constraint firstAttribute="trailing" secondItem="gxW-GG-b98" secondAttribute="trailing" id="GOt-Bd-VDi"/>
+                <constraint firstItem="gxW-GG-b98" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="JSm-Lb-1fF"/>
+                <constraint firstAttribute="trailing" secondItem="vo3-lH-3IN" secondAttribute="trailing" id="UQu-q7-gTq"/>
+                <constraint firstItem="vo3-lH-3IN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="dhZ-Aj-15I"/>
+                <constraint firstItem="vo3-lH-3IN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="eAr-Gs-kwD"/>
+                <constraint firstAttribute="bottom" secondItem="gxW-GG-b98" secondAttribute="bottom" id="qcp-tV-5fF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="180" height="133"/>
+            <connections>
+                <outlet property="configurableLabel" destination="vo3-lH-3IN" id="Nsz-ML-FTx"/>
+                <outlet property="diagonalView" destination="gxW-GG-b98" id="MOm-is-hzf"/>
+            </connections>
+            <point key="canvasLocation" x="144" y="84.107946026986511"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="PriceOrangeColor">
+            <color red="0.34901960784313724" green="0.65098039215686276" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="155" id="KGk-i7-Jjw" customClass="ShippingAddressTableViewCell" customModule="Mobikul_Single_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="419" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="419" height="154.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u62-bB-zNs">
+                        <rect key="frame" x="0.0" y="0.0" width="419" height="154.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Shipping Address" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YvJ-s9-yUY">
+                                <rect key="frame" x="16" y="16" width="387" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eFu-GI-NuY">
+                                <rect key="frame" x="0.0" y="53" width="419" height="0.5"/>
+                                <color key="backgroundColor" red="0.73333333333333328" green="0.75686274509803919" blue="0.81176470588235294" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="URE-qv-A4H"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9CP-u2-xJz">
+                                <rect key="frame" x="16" y="69.5" width="357" height="18"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" name="SecondaryTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sharp-arrow-right" translatesAutoresizingMaskIntoConstraints="NO" id="9lW-gW-Agn">
+                                <rect key="frame" x="381" y="67.5" width="22" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="22" id="XRC-ce-GyS"/>
+                                    <constraint firstAttribute="height" constant="22" id="sZL-la-F9e"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="suH-fc-an2">
+                                <rect key="frame" x="0.0" y="103.5" width="419" height="0.5"/>
+                                <color key="backgroundColor" name="AdditionaltextColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="0.5" id="YJq-Bf-Lkt"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Srx-Ne-MCA">
+                                <rect key="frame" x="0.0" y="104" width="209.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="eX6-fK-u0a"/>
+                                </constraints>
+                                <state key="normal" title="  Change Address" image="sharp-edit">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="changeAddressClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="nqM-J8-fgX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x04-Dm-w56">
+                                <rect key="frame" x="209.5" y="104" width="209.5" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="S9s-Rn-Y1l"/>
+                                </constraints>
+                                <state key="normal" title="  New Address" image="Icon-add-new">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="newAddressClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Pps-qZ-por"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="x04-Dm-w56" secondAttribute="trailing" id="3TZ-jk-vzp"/>
+                            <constraint firstItem="YvJ-s9-yUY" firstAttribute="top" secondItem="u62-bB-zNs" secondAttribute="top" constant="16" id="46E-E6-pTQ"/>
+                            <constraint firstAttribute="trailing" secondItem="suH-fc-an2" secondAttribute="trailing" id="9dg-sd-yxM"/>
+                            <constraint firstItem="x04-Dm-w56" firstAttribute="width" secondItem="Srx-Ne-MCA" secondAttribute="width" id="9xy-1b-oki"/>
+                            <constraint firstItem="suH-fc-an2" firstAttribute="top" secondItem="9CP-u2-xJz" secondAttribute="bottom" constant="16" id="EMc-P9-EOx"/>
+                            <constraint firstItem="eFu-GI-NuY" firstAttribute="top" secondItem="YvJ-s9-yUY" secondAttribute="bottom" constant="16" id="ET3-Zy-agt"/>
+                            <constraint firstAttribute="trailing" secondItem="eFu-GI-NuY" secondAttribute="trailing" id="Ekb-bb-rjI"/>
+                            <constraint firstItem="9lW-gW-Agn" firstAttribute="leading" secondItem="9CP-u2-xJz" secondAttribute="trailing" constant="8" id="FXg-Vo-5Xs"/>
+                            <constraint firstItem="Srx-Ne-MCA" firstAttribute="leading" secondItem="u62-bB-zNs" secondAttribute="leading" id="GB0-cx-7V6"/>
+                            <constraint firstItem="9lW-gW-Agn" firstAttribute="centerY" secondItem="9CP-u2-xJz" secondAttribute="centerY" id="HS5-4Z-GLm"/>
+                            <constraint firstItem="Srx-Ne-MCA" firstAttribute="width" secondItem="u62-bB-zNs" secondAttribute="width" multiplier="0.5" id="MWk-rf-8hc"/>
+                            <constraint firstItem="9CP-u2-xJz" firstAttribute="leading" secondItem="u62-bB-zNs" secondAttribute="leading" constant="16" id="NJP-si-hp6"/>
+                            <constraint firstItem="9CP-u2-xJz" firstAttribute="top" secondItem="eFu-GI-NuY" secondAttribute="bottom" constant="16" id="TOG-az-c4k"/>
+                            <constraint firstItem="suH-fc-an2" firstAttribute="leading" secondItem="u62-bB-zNs" secondAttribute="leading" id="UbT-K0-hLg"/>
+                            <constraint firstAttribute="bottom" secondItem="x04-Dm-w56" secondAttribute="bottom" constant="0.5" id="Xvh-yO-l8E"/>
+                            <constraint firstAttribute="bottom" secondItem="Srx-Ne-MCA" secondAttribute="bottom" constant="0.5" id="Zeu-u7-hkD"/>
+                            <constraint firstItem="eFu-GI-NuY" firstAttribute="leading" secondItem="u62-bB-zNs" secondAttribute="leading" id="arF-Uo-GOn"/>
+                            <constraint firstItem="YvJ-s9-yUY" firstAttribute="leading" secondItem="u62-bB-zNs" secondAttribute="leading" constant="16" id="cLc-Ty-ph1"/>
+                            <constraint firstItem="x04-Dm-w56" firstAttribute="top" secondItem="suH-fc-an2" secondAttribute="bottom" id="hLv-2i-ww9"/>
+                            <constraint firstAttribute="trailing" secondItem="YvJ-s9-yUY" secondAttribute="trailing" constant="16" id="jZV-re-kJV"/>
+                            <constraint firstAttribute="trailing" secondItem="9lW-gW-Agn" secondAttribute="trailing" constant="16" id="oPV-Wk-Sha"/>
+                            <constraint firstItem="Srx-Ne-MCA" firstAttribute="top" secondItem="suH-fc-an2" secondAttribute="bottom" id="zcY-ys-AkU"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="u62-bB-zNs" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="cdf-S5-ZD1"/>
+                    <constraint firstAttribute="bottom" secondItem="u62-bB-zNs" secondAttribute="bottom" id="eFS-q8-GgK"/>
+                    <constraint firstAttribute="trailing" secondItem="u62-bB-zNs" secondAttribute="trailing" id="ggG-0T-BKU"/>
+                    <constraint firstItem="u62-bB-zNs" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="s5k-KG-4y8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="addressLabel" destination="9CP-u2-xJz" id="fPH-eF-zAy"/>
+                <outlet property="arrowLabel" destination="9lW-gW-Agn" id="r1W-Xp-gzT"/>
+                <outlet property="changeAddressBtn" destination="Srx-Ne-MCA" id="YfY-Vj-hlX"/>
+                <outlet property="newAddressBtn" destination="x04-Dm-w56" id="OMK-1c-rnU"/>
+                <outlet property="shippingAddressLabel" destination="YvJ-s9-yUY" id="EeX-ex-IYH"/>
+            </connections>
+            <point key="canvasLocation" x="-281.5" y="30"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Icon-add-new" width="24" height="24"/>
+        <image name="sharp-arrow-right" width="24" height="24"/>
+        <image name="sharp-edit" width="24" height="24"/>
+        <namedColor name="AdditionaltextColor">
+            <color red="0.73299998044967651" green="0.75700002908706665" blue="0.81199997663497925" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="SecondaryTextColor">
+            <color red="0.27099999785423279" green="0.57300001382827759" blue="0.50999999046325684" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

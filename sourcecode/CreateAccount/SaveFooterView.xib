@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SaveFooterView" customModule="MobikulMP_Single_App" customModuleProvider="target">
+            <connections>
+                <outlet property="alreadyHaveAccountBtn" destination="UAn-h8-oog" id="3oE-wH-VX3"/>
+                <outlet property="createAccountBtn" destination="zHe-kY-Xoa" id="9sX-ml-mmC"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="454" height="162"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UAn-h8-oog">
+                    <rect key="frame" x="0.0" y="114" width="454" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="Eae-Jm-Cmz"/>
+                    </constraints>
+                    <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <state key="normal">
+                        <attributedString key="attributedTitle">
+                            <fragment content="Already have an account? Sign In">
+                                <attributes>
+                                    <color key="NSBackgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="NSColor" name="textColor" catalog="System" colorSpace="catalog"/>
+                                    <font key="NSFont" size="15" name=".SFNSText"/>
+                                </attributes>
+                            </fragment>
+                        </attributedString>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zHe-kY-Xoa">
+                    <rect key="frame" x="16" y="36" width="422" height="48"/>
+                    <color key="backgroundColor" name="AccentColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="48" id="1D2-wC-Pei"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Create an Account">
+                        <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="zHe-kY-Xoa" secondAttribute="trailing" constant="16" id="2nZ-Qa-QNz"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="UAn-h8-oog" secondAttribute="trailing" id="E6p-5F-VUy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="UAn-h8-oog" secondAttribute="bottom" constant="8" id="JgA-bK-1pl"/>
+                <constraint firstItem="zHe-kY-Xoa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="P1V-0t-RKj"/>
+                <constraint firstItem="UAn-h8-oog" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="WQs-qV-pc6"/>
+                <constraint firstItem="UAn-h8-oog" firstAttribute="top" secondItem="zHe-kY-Xoa" secondAttribute="bottom" constant="30" id="uJM-Be-IaR"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="196.80000000000001" y="270.76461769115446"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

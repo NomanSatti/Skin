@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="90" id="KGk-i7-Jjw" customClass="ChangeStatusIndicatorTableViewCell" customModule="Mobikul_Single_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="359" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="359" height="89.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5g5-tV-7Gp">
+                        <rect key="frame" x="16" y="29.5" width="51" height="31"/>
+                        <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="thumbTintColor" name="AccentColor"/>
+                        <connections>
+                            <action selector="switchButtonAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="bQZ-Gb-mH3"/>
+                        </connections>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dzd-Ra-LFW">
+                        <rect key="frame" x="81" y="19" width="262" height="52"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Dzd-Ra-LFW" firstAttribute="leading" secondItem="5g5-tV-7Gp" secondAttribute="trailing" constant="16" id="3Ue-ub-03V"/>
+                    <constraint firstItem="5g5-tV-7Gp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="HiQ-RU-dY0"/>
+                    <constraint firstItem="5g5-tV-7Gp" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="TDQ-JK-nDu"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Dzd-Ra-LFW" secondAttribute="trailing" id="ee3-8z-52b"/>
+                    <constraint firstItem="Dzd-Ra-LFW" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="n4z-TO-SOr"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Dzd-Ra-LFW" secondAttribute="bottom" constant="8" id="zjx-oc-MQq"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="descLabel" destination="Dzd-Ra-LFW" id="oML-go-UyI"/>
+                <outlet property="indicatorSwitch" destination="5g5-tV-7Gp" id="vtF-xm-hTu"/>
+            </connections>
+            <point key="canvasLocation" x="164" y="101.64917541229386"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

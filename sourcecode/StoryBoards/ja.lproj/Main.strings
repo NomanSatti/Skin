@@ -1,0 +1,48 @@
+
+/* Class = "UIButton"; normalTitle = "Add To Cart"; ObjectID = "0AJ-1r-HWO"; */
+"0AJ-1r-HWO.normalTitle" = "Add To Cart";
+
+/* Class = "UIButton"; normalTitle = "Add To Cart"; ObjectID = "2EJ-HS-DNY"; */
+"2EJ-HS-DNY.normalTitle" = "Add To Cart";
+
+/* Class = "UIButton"; normalTitle = "Add All to Cart"; ObjectID = "5ov-Pp-hS5"; */
+"5ov-Pp-hS5.normalTitle" = "Add All to Cart";
+
+/* Class = "UIButton"; normalTitle = "Update Wish List"; ObjectID = "Bd3-Fb-xjl"; */
+"Bd3-Fb-xjl.normalTitle" = "Update Wish List";
+
+/* Class = "UIButton"; normalTitle = "Log Out"; ObjectID = "Htb-H9-ofz"; */
+"Htb-H9-ofz.normalTitle" = "Log Out";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "OTN-QJ-Phl"; */
+"OTN-QJ-Phl.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "UHy-I1-Cli"; */
+"UHy-I1-Cli.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "jBb-ha-KaF"; */
+"jBb-ha-KaF.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "olF-Mb-qno"; */
+"olF-Mb-qno.title" = "Item";
+
+/* Class = "UIBarButtonItem"; title = "Item"; ObjectID = "rDn-c2-fdA"; */
+"rDn-c2-fdA.title" = "Item";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "sey-9Q-mH9"; */
+"sey-9Q-mH9.text" = "Title";
+
+/* Class = "UILabel"; text = "Refreshing..."; ObjectID = "sji-br-38n"; */
+"sji-br-38n.text" = "Refreshing...";
+
+/* Class = "UISegmentedControl"; tBq-Fj-ryl.segmentTitles[0] = "Wallpaper"; ObjectID = "tBq-Fj-ryl"; */
+"tBq-Fj-ryl.segmentTitles[0]" = "Wallpaper";
+
+/* Class = "UISegmentedControl"; tBq-Fj-ryl.segmentTitles[1] = "Case"; ObjectID = "tBq-Fj-ryl"; */
+"tBq-Fj-ryl.segmentTitles[1]" = "Case";
+
+/* Class = "UILabel"; text = "Title"; ObjectID = "uom-MO-pw0"; */
+"uom-MO-pw0.text" = "Title";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "vzJ-Rw-ydN"; */
+"vzJ-Rw-ydN.normalTitle" = "Button";

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="77" id="KGk-i7-Jjw" customClass="ClearSearchHistoryTableViewCell" customModule="Skins" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="362" height="77"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="362" height="77"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Kmh-S3-HvU">
+                        <rect key="frame" x="15" y="12" width="51" height="31"/>
+                        <color key="onTintColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="thumbTintColor" name="AccentColor"/>
+                        <connections>
+                            <action selector="switchAction:" destination="KGk-i7-Jjw" eventType="valueChanged" id="6zF-gr-HlN"/>
+                        </connections>
+                    </switch>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JQv-5n-Auk">
+                        <rect key="frame" x="80" y="19" width="267" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPl-Ji-aFd">
+                        <rect key="frame" x="80" y="44" width="267" height="14.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                        <color key="textColor" red="0.99607843137254903" green="0.42352941176470588" blue="0.42352941176470588" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="JQv-5n-Auk" secondAttribute="trailing" id="23v-rs-A1N"/>
+                    <constraint firstItem="Kmh-S3-HvU" firstAttribute="centerY" secondItem="JQv-5n-Auk" secondAttribute="centerY" id="IjS-yE-uvm"/>
+                    <constraint firstItem="Kmh-S3-HvU" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="K4y-IQ-UxR"/>
+                    <constraint firstItem="JQv-5n-Auk" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="NjV-OR-gNq"/>
+                    <constraint firstItem="JQv-5n-Auk" firstAttribute="leading" secondItem="Kmh-S3-HvU" secondAttribute="trailing" constant="16" id="gwY-or-slc"/>
+                    <constraint firstItem="MPl-Ji-aFd" firstAttribute="trailing" secondItem="JQv-5n-Auk" secondAttribute="trailing" id="tgj-qr-UE7"/>
+                    <constraint firstItem="MPl-Ji-aFd" firstAttribute="top" secondItem="JQv-5n-Auk" secondAttribute="bottom" constant="8" id="vJd-6R-23I"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="MPl-Ji-aFd" secondAttribute="bottom" constant="7.5" id="vxl-R1-flO"/>
+                    <constraint firstItem="MPl-Ji-aFd" firstAttribute="leading" secondItem="JQv-5n-Auk" secondAttribute="leading" id="wdH-ZP-8a8"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="changeSwitch" destination="Kmh-S3-HvU" id="DGm-BV-5sL"/>
+                <outlet property="descLabel" destination="JQv-5n-Auk" id="p6l-93-5To"/>
+                <outlet property="subLabel" destination="MPl-Ji-aFd" id="xp8-iS-2hY"/>
+            </connections>
+            <point key="canvasLocation" x="166.40000000000001" y="169.56521739130437"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="145" id="KGk-i7-Jjw" customClass="BundleRadioTableViewCell" customModule="sourcecode" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="145"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="438" height="145"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xat-2O-lIS">
+                        <rect key="frame" x="16" y="8" width="406" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jx7-sD-bOX">
+                        <rect key="frame" x="0.0" y="37" width="430" height="44"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="RxH-Oq-7e6"/>
+                        </constraints>
+                    </tableView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0P2-8d-lzf">
+                        <rect key="frame" x="0.0" y="89" width="438" height="48"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dsa-19-X9y">
+                                <rect key="frame" x="16" y="8" width="32" height="32"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="GCM-QQ-1Fi"/>
+                                    <constraint firstAttribute="height" constant="32" id="mqf-Jo-Eip"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="-">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="minusClicked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="CGt-AX-ym0"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9yV-lM-InE">
+                                <rect key="frame" x="56" y="14" width="326" height="20.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Esd-5D-al6">
+                                <rect key="frame" x="390" y="8" width="32" height="32"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="32" id="mcK-fB-G6Q"/>
+                                    <constraint firstAttribute="width" constant="32" id="rvb-6I-IXJ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
+                                <state key="normal" title="+">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="plusClcked:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fgb-ha-Duo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="48" id="4l9-JH-URZ"/>
+                            <constraint firstItem="Esd-5D-al6" firstAttribute="leading" secondItem="9yV-lM-InE" secondAttribute="trailing" constant="8" id="6Hb-QE-AFo"/>
+                            <constraint firstAttribute="trailing" secondItem="Esd-5D-al6" secondAttribute="trailing" constant="16" id="6dg-zH-MGI"/>
+                            <constraint firstItem="Esd-5D-al6" firstAttribute="top" secondItem="0P2-8d-lzf" secondAttribute="top" constant="8" id="85i-PV-qr5"/>
+                            <constraint firstItem="9yV-lM-InE" firstAttribute="leading" secondItem="dsa-19-X9y" secondAttribute="trailing" constant="8" id="V3V-sM-FP2"/>
+                            <constraint firstItem="dsa-19-X9y" firstAttribute="top" secondItem="0P2-8d-lzf" secondAttribute="top" constant="8" id="fcN-bH-egx"/>
+                            <constraint firstItem="9yV-lM-InE" firstAttribute="centerY" secondItem="dsa-19-X9y" secondAttribute="centerY" id="gfO-Fy-eaT"/>
+                            <constraint firstItem="dsa-19-X9y" firstAttribute="leading" secondItem="0P2-8d-lzf" secondAttribute="leading" constant="16" id="q44-lr-IA4"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="0P2-8d-lzf" secondAttribute="trailing" id="Vnr-re-VTD"/>
+                    <constraint firstItem="Xat-2O-lIS" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="XQW-ah-41W"/>
+                    <constraint firstItem="Xat-2O-lIS" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="aFF-oe-n8N"/>
+                    <constraint firstAttribute="trailing" secondItem="Xat-2O-lIS" secondAttribute="trailing" constant="16" id="pmu-O3-KAY"/>
+                    <constraint firstItem="jx7-sD-bOX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sYx-qG-PCO"/>
+                    <constraint firstItem="0P2-8d-lzf" firstAttribute="top" secondItem="jx7-sD-bOX" secondAttribute="bottom" constant="8" id="v5y-dH-wr0"/>
+                    <constraint firstAttribute="trailing" secondItem="jx7-sD-bOX" secondAttribute="trailing" constant="8" id="wIL-BA-r3c"/>
+                    <constraint firstItem="jx7-sD-bOX" firstAttribute="top" secondItem="Xat-2O-lIS" secondAttribute="bottom" constant="8" id="wJg-hF-VdI"/>
+                    <constraint firstItem="0P2-8d-lzf" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="xlK-5e-fZB"/>
+                    <constraint firstAttribute="bottom" secondItem="0P2-8d-lzf" secondAttribute="bottom" constant="8" id="z7G-5k-KiU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="headingLabel" destination="Xat-2O-lIS" id="M40-uZ-hfD"/>
+                <outlet property="minusBtn" destination="dsa-19-X9y" id="46V-U4-pQD"/>
+                <outlet property="plusBtn" destination="Esd-5D-al6" id="xgS-Vw-8RQ"/>
+                <outlet property="qtyLabel" destination="9yV-lM-InE" id="VsL-rp-fz2"/>
+                <outlet property="qtyView" destination="0P2-8d-lzf" id="Hzg-xD-5kW"/>
+                <outlet property="qtyViewHeight" destination="4l9-JH-URZ" id="Q5K-zD-enW"/>
+                <outlet property="radioTableView" destination="jx7-sD-bOX" id="kqY-mv-1Tz"/>
+                <outlet property="tableViewHeight" destination="RxH-Oq-7e6" id="KTz-a6-3pz"/>
+            </connections>
+            <point key="canvasLocation" x="227.19999999999999" y="201.94902548725639"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

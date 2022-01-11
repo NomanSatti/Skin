@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Roboto-Light.ttf">
+            <string>Roboto-Light</string>
+        </array>
+        <array key="Roboto-Regular.ttf">
+            <string>Roboto-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CustomPickerControl" customModule="CaseWallpaper" customModuleProvider="target">
+            <connections>
+                <outlet property="btnRemoveOptional" destination="MAp-ZM-KIL" id="AZU-aF-WpE"/>
+                <outlet property="btnTitle" destination="9q1-Od-haP" id="l0s-nq-isS"/>
+                <outlet property="imgDropDown" destination="hej-gQ-qtp" id="DQ4-aY-jBe"/>
+                <outlet property="lblCompulsory" destination="Wuq-n3-aao" id="aI4-E4-VDR"/>
+                <outlet property="lblTitle" destination="UZm-pD-33R" id="MgN-Cm-c3H"/>
+                <outlet property="mainContainerView" destination="r4D-bb-wTk" id="byg-tY-BzP"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="fMZ-Zh-AnI" propertyAccessControl="none">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="r4D-bb-wTk">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="60"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="jif-CD-U7o">
+                            <rect key="frame" x="10" y="5" width="355" height="17.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="3JH-4f-bmk">
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="17.5"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UZm-pD-33R">
+                                            <rect key="frame" x="0.0" y="0.0" width="27.5" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="14"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                            </variation>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" text="*" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wuq-n3-aao">
+                                            <rect key="frame" x="30.5" y="0.0" width="324.5" height="17.5"/>
+                                            <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="13"/>
+                                            <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                            <nil key="highlightedColor"/>
+                                            <variation key="heightClass=regular-widthClass=regular">
+                                                <fontDescription key="fontDescription" name="Roboto-Light" family="Roboto" pointSize="15"/>
+                                            </variation>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="IOs-ek-YpK">
+                            <rect key="frame" x="10" y="24.5" width="355" height="35.5"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lGk-nG-6ZN">
+                                    <rect key="frame" x="0.0" y="0.0" width="355" height="35"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EpY-9Y-YLW">
+                                            <rect key="frame" x="0.0" y="0.0" width="355" height="35"/>
+                                            <subviews>
+                                                <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="down_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="hej-gQ-qtp">
+                                                    <rect key="frame" x="340" y="12.5" width="15" height="10"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="15" id="DuN-HC-3Lw"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9q1-Od-haP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="35"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="35" id="4GN-JB-q0w"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="16"/>
+                                                    <state key="normal" title="Select">
+                                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <variation key="heightClass=regular-widthClass=regular">
+                                                        <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="18"/>
+                                                    </variation>
+                                                    <connections>
+                                                        <action selector="pickerClicked:" destination="-1" eventType="touchUpInside" id="Oo2-Sc-uCR"/>
+                                                    </connections>
+                                                </button>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                            <constraints>
+                                                <constraint firstItem="hej-gQ-qtp" firstAttribute="trailing" secondItem="9q1-Od-haP" secondAttribute="trailing" id="UBv-eO-3PF"/>
+                                                <constraint firstAttribute="trailing" secondItem="9q1-Od-haP" secondAttribute="trailing" id="XQ1-8O-X94"/>
+                                                <constraint firstAttribute="bottom" secondItem="9q1-Od-haP" secondAttribute="bottom" id="hy6-7z-Lbr"/>
+                                                <constraint firstItem="hej-gQ-qtp" firstAttribute="centerY" secondItem="9q1-Od-haP" secondAttribute="centerY" id="sGR-wj-6Tx"/>
+                                                <constraint firstItem="9q1-Od-haP" firstAttribute="top" secondItem="EpY-9Y-YLW" secondAttribute="top" id="whj-a4-NVE"/>
+                                                <constraint firstItem="9q1-Od-haP" firstAttribute="leading" secondItem="EpY-9Y-YLW" secondAttribute="leading" id="xLc-AR-jOa"/>
+                                            </constraints>
+                                        </view>
+                                        <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MAp-ZM-KIL">
+                                            <rect key="frame" x="0.0" y="0.0" width="30" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="30" id="Z8G-MA-uRc"/>
+                                            </constraints>
+                                            <state key="normal" image="delete_icon"/>
+                                            <connections>
+                                                <action selector="removeOptionalClicked:" destination="-1" eventType="touchUpInside" id="FiR-40-Oeg"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                </stackView>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0VA-5x-1dn" userLabel="Line View">
+                                    <rect key="frame" x="0.0" y="35" width="355" height="0.5"/>
+                                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="0.5" id="yko-LG-m2i"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <edgeInsets key="layoutMargins" top="5" left="10" bottom="0.0" right="10"/>
+                </stackView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="r4D-bb-wTk" firstAttribute="top" secondItem="fMZ-Zh-AnI" secondAttribute="top" id="2h4-wL-fIX"/>
+                <constraint firstAttribute="bottom" secondItem="r4D-bb-wTk" secondAttribute="bottom" id="6H0-vI-LE3"/>
+                <constraint firstAttribute="trailing" secondItem="r4D-bb-wTk" secondAttribute="trailing" id="LWx-En-NVJ"/>
+                <constraint firstItem="r4D-bb-wTk" firstAttribute="leading" secondItem="fMZ-Zh-AnI" secondAttribute="leading" id="Uaq-PX-eD3"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="-19.5" y="86"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="delete_icon" width="28" height="28"/>
+        <image name="down_arrow" width="15" height="10"/>
+    </resources>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="HeaderTitleView" customModule="Mobikul_Single_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="366" height="39"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y5g-Al-PKg">
+                    <rect key="frame" x="16" y="8" width="342" height="22.5"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                    <color key="textColor" red="0.57647058823529407" green="0.57647058823529407" blue="0.57647058823529407" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hmc-d8-bk0">
+                    <rect key="frame" x="0.0" y="38.5" width="366" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="HDS-Iw-kot"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="hmc-d8-bk0" secondAttribute="trailing" id="HOg-Zk-zlQ"/>
+                <constraint firstItem="hmc-d8-bk0" firstAttribute="top" secondItem="y5g-Al-PKg" secondAttribute="bottom" constant="8" id="Lui-Pr-FpB"/>
+                <constraint firstAttribute="bottom" secondItem="hmc-d8-bk0" secondAttribute="bottom" id="R1O-j7-XFd"/>
+                <constraint firstItem="hmc-d8-bk0" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="ZJ3-ni-qRV"/>
+                <constraint firstItem="y5g-Al-PKg" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="bTG-h8-ZEe"/>
+                <constraint firstItem="y5g-Al-PKg" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="8" id="fRQ-7u-NgU"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="y5g-Al-PKg" secondAttribute="trailing" constant="8" id="jSL-12-4ki"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="bottomView" destination="hmc-d8-bk0" id="d1O-cj-3eC"/>
+                <outlet property="headingLbl" destination="y5g-Al-PKg" id="ZGe-WV-U2i"/>
+            </connections>
+            <point key="canvasLocation" x="124.8" y="-132.68365817091455"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="321" id="KGk-i7-Jjw" customClass="BannerTableViewCell" customModule="MobikulMP_Single_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="438" height="321"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="438" height="320.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="j9W-GG-xVA">
+                        <rect key="frame" x="8" y="40.5" width="422" height="280"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="height" priority="999" constant="70" id="72j-pH-PpO"/>
+                        </constraints>
+                        <inset key="scrollIndicatorInsets" minX="5" minY="0.0" maxX="5" maxY="0.0"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="BN1-aC-3dn">
+                            <size key="itemSize" width="50" height="50"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                    </collectionView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product Category Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LL0-90-HOc">
+                        <rect key="frame" x="16" y="10" width="406" height="20.5"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20.5" id="KQf-92-DAe"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="j9W-GG-xVA" firstAttribute="top" secondItem="LL0-90-HOc" secondAttribute="bottom" constant="10" id="9Xp-1l-5E9"/>
+                    <constraint firstItem="j9W-GG-xVA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="9fb-V4-LjZ"/>
+                    <constraint firstItem="LL0-90-HOc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="IGU-5z-eNH"/>
+                    <constraint firstAttribute="bottom" secondItem="j9W-GG-xVA" secondAttribute="bottom" id="IxX-eu-dZx"/>
+                    <constraint firstAttribute="trailing" secondItem="LL0-90-HOc" secondAttribute="trailing" constant="16" id="QzU-cA-st9"/>
+                    <constraint firstItem="LL0-90-HOc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bSo-99-DF9"/>
+                    <constraint firstAttribute="trailing" secondItem="j9W-GG-xVA" secondAttribute="trailing" constant="8" id="jee-3K-5g5"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bannerCollectionView" destination="j9W-GG-xVA" id="Xff-hI-BYe"/>
+                <outlet property="bannerCollectionViewHeight" destination="72j-pH-PpO" id="qyr-eO-k0J"/>
+                <outlet property="textTitleLabel" destination="LL0-90-HOc" id="RqA-cM-CzE"/>
+            </connections>
+            <point key="canvasLocation" x="-1145.5999999999999" y="-138.0809595202399"/>
+        </tableViewCell>
+    </objects>
+</document>

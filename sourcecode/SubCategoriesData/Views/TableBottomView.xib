@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="TableBottomView" customModule="MobikulMP_Single_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="443" height="97"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D0v-rC-6xx">
+                    <rect key="frame" x="0.0" y="0.0" width="443" height="97"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You have just reached to the bottom of page." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="suV-uz-ICt">
+                            <rect key="frame" x="16" y="32" width="411" height="12"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                            <color key="textColor" name="LabelColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Vx-NX-Be4">
+                            <rect key="frame" x="183.5" y="52" width="76" height="28"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="28" id="d1j-O2-MT6"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="13"/>
+                            <state key="normal" title="Back to Top">
+                                <color key="titleColor" name="AccentColor"/>
+                            </state>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="suV-uz-ICt" firstAttribute="leading" secondItem="Bzc-Gp-fs6" secondAttribute="leading" constant="16" id="3rZ-h7-5Js"/>
+                        <constraint firstItem="0Vx-NX-Be4" firstAttribute="centerX" secondItem="suV-uz-ICt" secondAttribute="centerX" id="E3K-Xc-nHe"/>
+                        <constraint firstItem="suV-uz-ICt" firstAttribute="top" secondItem="Bzc-Gp-fs6" secondAttribute="top" constant="32" id="W13-O1-r8s"/>
+                        <constraint firstItem="Bzc-Gp-fs6" firstAttribute="trailing" secondItem="suV-uz-ICt" secondAttribute="trailing" constant="16" id="jIg-Z6-KOD"/>
+                        <constraint firstItem="0Vx-NX-Be4" firstAttribute="top" secondItem="suV-uz-ICt" secondAttribute="bottom" constant="8" id="wzZ-HJ-23F"/>
+                        <constraint firstItem="Bzc-Gp-fs6" firstAttribute="bottom" secondItem="0Vx-NX-Be4" secondAttribute="bottom" constant="17" id="xbO-1F-IFB"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="Bzc-Gp-fs6"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="D0v-rC-6xx" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="59n-ob-P8S"/>
+                <constraint firstItem="D0v-rC-6xx" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="DW1-XT-SFF"/>
+                <constraint firstItem="D0v-rC-6xx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="MPn-rt-ghj"/>
+                <constraint firstAttribute="bottom" secondItem="D0v-rC-6xx" secondAttribute="bottom" id="bdd-fV-bJY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="backToTopBrn" destination="0Vx-NX-Be4" id="UNh-Tj-HRa"/>
+                <outlet property="descLabel" destination="suV-uz-ICt" id="GFJ-cg-Jfx"/>
+                <outlet property="mainView" destination="D0v-rC-6xx" id="0KV-ve-w9n"/>
+            </connections>
+            <point key="canvasLocation" x="196" y="-110.19490254872565"/>
+        </view>
+    </objects>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelColor">
+            <color red="0.0" green="0.0" blue="0.0" alpha="0.56000000238418579" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
