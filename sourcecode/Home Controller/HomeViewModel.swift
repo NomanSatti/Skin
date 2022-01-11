@@ -447,7 +447,6 @@ extension HomeViewModel: UITableViewDelegate, UITableViewDataSource {
         case .banner:
             return UITableView.automaticDimension
         case .featureCategory:
-            
             //return 200
 //            if let item = item as? HomeViewModelFeatureCategoriesItem, self.themeCode == 1 {
 //                if CGFloat(item.featureCategories.count * 90) > 1.5 * AppDimensions.screenWidth {
