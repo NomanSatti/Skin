@@ -94,7 +94,7 @@ extension CategoryProductsViewModal {
         } else {
             requstParams["type"] = categoryType
         }
-        // category Id to be set here...
+        // category Id to be set here:
         requstParams["id"] = categoryId ?? "33"
         let width = String(format: "%f", AppDimensions.screenWidth * UIScreen.main.scale)
         requstParams["width"] = width
