@@ -94,7 +94,8 @@ extension CategoryProductsViewModal {
         } else {
             requstParams["type"] = categoryType
         }
-        requstParams["id"] = categoryId
+        // category Id to be set here...
+        requstParams["id"] = categoryId ?? "33"
         let width = String(format: "%f", AppDimensions.screenWidth * UIScreen.main.scale)
         requstParams["width"] = width
         if page == 1 {
@@ -213,8 +214,8 @@ extension CategoryProductsViewModal {
         valuesForHashkeys.append(Defaults.quoteId)
         valuesForHashkeys.append(Defaults.customerToken ?? "")
         valuesForHashkeys.append(Defaults.currency ?? "")
-        valuesForHashkeys.append(categoryType)
-        valuesForHashkeys.append(categoryId)
+        valuesForHashkeys.append(categoryType ?? "")
+        valuesForHashkeys.append(categoryId ?? "33")
         return NetworkManager.sharedInstance.getHashKey(forView: "productCategory", keys: valuesForHashkeys)
     }
 }
